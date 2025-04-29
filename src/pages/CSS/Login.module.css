@@ -1,0 +1,99 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background: var(--color-bg-screen);
+}
+
+.logo {
+    width: 217px;
+    height: 195px;
+    object-fit: contain;
+    margin-bottom: -3.5rem; /* experimente -1.5rem, -2rem, -2.5rem… */
+    z-index: 1;
+}
+.card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--color-bg-card);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+.title {
+    font-size: 18px;
+    font: bold;
+    color: var(--color-text-title);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    width: 329px;
+    height: 95px;
+    color: #343b41;
+}
+.label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-label);
+    margin-bottom: 0.6rem;
+}
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-bg-input);
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 85, 255, 0.3);
+}
+.button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #8b1d07;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.button:hover {
+    background: #8b1d07cc;
+}
+
+.registerText {
+    margin-top: 1.5rem; /* espaço acima */
+    margin-bottom: 0.5rem; /* espaço abaixo, antes do botão */
+    font-size: 0.875rem; /* 14px */
+    color: #d1d5db; /* copie do Figma: cor do texto secundário */
+    text-align: center;
+}
+.btnRegister {
+    width: 100%;
+    padding: 0.75rem; /* igual ao botão primário */
+    background-color: #9ca3af; /* cor clara do Figma */
+    color: #ffffff; /* texto branco */
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px; /* mesma borda do seu card/inputs */
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.btnRegister:hover {
+    background: #9ca3afa1;
+}
