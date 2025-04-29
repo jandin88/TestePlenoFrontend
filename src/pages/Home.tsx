@@ -15,13 +15,22 @@ export default function Home() {
                 <div className={styles.inner}>
                     {/* Logo + botão Sair */}
                     <img src={logo} alt="Capys" className={styles.logo} />
-                    <button
-                        type="button"
-                        className={styles.logout}
-                        onClick={() => nav("/")}
-                    >
-                        Sair
-                    </button>
+                    <div className={styles.buttonGroup}>
+                        <button
+                            type="button"
+                            className={styles.books}
+                            onClick={() => nav("/livros")}
+                        >
+                            Books
+                        </button>
+                        <button
+                            type="button"
+                            className={styles.logout}
+                            onClick={() => nav("/")}
+                        >
+                            Sair
+                        </button>
+                    </div>
                 </div>
                 {/* Saudação fica numa segunda “row” sobre o mesmo fundo */}
                 <div className={styles.greetingRow}>
@@ -38,7 +47,6 @@ export default function Home() {
                 <div className={styles.inner}>
                     <h3 className={styles.mainTitle}>
                         Que pena! Estamos em desenvolvimento :(
-                            
                     </h3>
                     <p className={styles.mainText}>
                         Nossa aplicação está em desenvolvimento, em breve

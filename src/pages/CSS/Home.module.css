@@ -33,6 +33,19 @@
     border-radius: 8px;
     cursor: pointer;
 }
+.books{
+    background: #162135;
+    color: #f4f5f7;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.buttonGroup {
+    display: flex;
+    gap: 0.5rem;   /* distancia de 8px entre Sair e Books */
+    background-color: var(--color-bg-card);
+  }
 
 .greetingRow {
     width: 100%;

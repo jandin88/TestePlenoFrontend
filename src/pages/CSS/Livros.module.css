@@ -1,0 +1,75 @@
+.page {
+    min-height: 100vh;
+    background: var(--color-bg-card);
+    margin: 0;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative; /* cria o contexto para o logo absolute */
+
+}
+
+.title {
+    font-size: 1.75rem;
+    color: var(--color-text-title);
+    margin-left: 1%;
+}
+
+.logo{
+    position: absolute;       /* retira do fluxo normal */
+    left: 50%;                /* posiciona no meio do header */
+    transform: translateX(-50%); /* centraliza exatamente */
+    height: 120px; 
+}
+
+
+.home {
+    background: var(--color-bg-screen);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+    background: var(--color-bg-screen);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.bookName {
+    font-size: 1.125rem;
+    margin: 0 0 0.5rem;
+    color: #fff;
+}
+
+.author,
+.publisher,
+.pubDate,
+.rating {
+    margin: 0.25rem 0;
+    font-size: 0.875rem;
+    color: var(--color-text-label);
+}
+
+.favorite {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #e25555;
+    font-size: 0.875rem;
+}
