@@ -1,0 +1,219 @@
+.container {
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-bg-screen);
+    padding-bottom: 100px;
+}
+
+.header {
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 170px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.backButton {
+    background: var(--color-bg-screen);
+    color: #f4f5f7;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background 0.2s;
+}
+.backButton:hover {
+    background: #162135;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    background: var(--color-bg-card);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+
+}
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-text-title);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.subtitle {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.field {
+}
+.label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-label);
+}
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-bg-input);
+    border: 1px solid #e2e8f0;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(92, 114, 168, 0.4);
+}
+.textarea {
+    width: 100%;
+    min-height: 6rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f4f5f7;
+    font-size: 1rem;
+    resize: vertical;
+}
+.select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #E2E8F0;
+    color: #808185;
+    border-radius: 8px;
+    background-color: var(--color-bg-input);
+    font-size: 1rem;
+    appearance: none;
+    margin-top: 15px;
+
+}
+.button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-btn-bg);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.button:hover {
+    background: var( --color-btn-hover);
+}
+.loginText {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--color-text-label);
+    text-align: center;
+}
+.loginLink {
+    margin-left: 0.25rem;
+    color: #0055ff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.loginLink:hover {
+    text-decoration: underline;
+}
+
+
+/* ícone do alerta, antes do texto */
+.alertIcon {
+    flex-shrink: 0;
+    margin-right: 0.75rem;    /* espaço entre ícone e texto */
+    font-size: 1.25rem;       /* tamanho do ícone */
+    /* você pode definir cores específicas, mas geralmente herda a cor do .alert */
+  }
+  
+
+.alertContainer {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1000;  /* acima de tudo */
+  }
+  
+  .alert {
+    position: relative;          /* contexto para a barra crescer */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0;            /* o gap do container já faz o espaçamento */
+    color: #F4F5F7;
+    overflow: hidden;            /* para a barra não vazar */
+    background: #1f2937;         /* cor de fundo padrão (escura) */
+  }
+  .alertSuccess {
+    background: #1f2937;  
+  }
+  .alertError {
+    background: #1f2937;
+  }
+  
+  .alertText {
+    flex: 1;
+  }
+  
+  .alertClose {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  .alertBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: var(--color-success, #10b981); 
+    animation: growBar 3s forwards;            
+  }
+  
+  .alertError .alertBar {
+    background: var(--color-error, #ef4444);    
+  }
+  
+  @keyframes growBar {
+    to {
+      width: 100%;
+    }
+  }
+  

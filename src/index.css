@@ -16,13 +16,13 @@ body {
     --color-bg-card:     #021A30;   /* fundo do card */
 
     --color-text-title:  #F8F9FA;   /* cor do título “Bem-vindo de volta” */
-    --color-text-label:  #F8F9FA;   /* cor dos labels “E-mail”/“Senha” */
+    --color-text-label:  #f8f9fac9;   /* cor dos labels “E-mail”/“Senha” */
     --color-bg-input: #343B41;
 
     --color-border:      #D1D5DB;   /* cor da borda dos inputs */
     --color-focus-ring:  rgba(0,85,255,0.3); /* anel de foco */
 
-    --color-btn-bg:      #0055FF;   /* background do botão */
-    --color-btn-hover:   #0044D1;   /* hover do botão */
+    --color-btn-bg:      #8b1d07;   /* background do botão */
+    --color-btn-hover:   #8b1d07cc;   /* hover do botão */
   }
   
