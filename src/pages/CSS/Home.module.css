@@ -1,0 +1,84 @@
+.page {
+    min-height: 100vh;
+    margin: 0;
+    background: var(--color-bg-card);
+}
+
+.headerFull {
+    width: 100%;
+    padding: 0rem 0;
+    background: var(--color-bg-screen);
+    position: relative;
+}
+
+/* 3) Inner: limita largura e centraliza */
+.inner {
+    width: 90%;          /* ocupa 90% da viewport */
+    max-width: 800px;    /* mas não passa de 800px */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+/* 4) Logo + Sair no mesmo row */
+.logo {
+    height: 120px; /* ajuste conforme sua imagem */
+}
+.logout {
+    background: #162135;
+    color: #f4f5f7;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.greetingRow {
+    width: 100%;
+    background: var( --color-bg-screen);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem 0;
+}
+.greetingRow .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.greetingTitle {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+.greetingRole {
+    font-size: 12px;
+    color: #868E96;
+    width:250px;
+}
+
+.mainFull {
+    width: 100%;
+    padding: 2rem 0;
+}
+.mainFull .inner {
+    display: block;
+}
+.mainTitle {
+    margin: 0 0 0.5rem;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+.mainText {
+    margin: 0;
+    color: #cbd5e1;
+}
+h3{
+    padding-bottom: 9px;
+}
+
+@media (max-width: 600px) {
+    .greetingRow .inner {
+      flex-direction: column;
+      align-items: flex-start; /* alinha o texto à esquerda */
+      gap: 0.1rem;
+    }
+  }
